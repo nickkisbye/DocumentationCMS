@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="./js/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Side navigation -->
+    <div class="sidenav">
+        <a href="/">Dashboard</a>
+        <hr />
+        <div class="navcontent">
+
+        </div>
+    </div>
+
+    <!-- Page content-wrapper -->
+    <div class="main">
+        <div class="content-wrapper">
+            <div class="content">
+                <div class="headline-wrapper">
+                    <h2 class="blue">NodeJS Documentation 😎✌</h2><span>by Nick Kisbye Hansen</span>
+                </div>
+
+            </div>
+            <div class="inner-text">
+                <div class="table-of-content">
+                    More topics will be added to this as the semester progresses.
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Add topic
+                    </button>
+                </div>
+
+            </div>
+            <div style="width: 80%; margin: 80px auto -40px auto; padding: 0;">
+                <h2>Table of contents</h2>
+                <div class="table-wrapper">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add new topic</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input id="page-title" type="text" placeholder="Page title" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="save-button" data-dismiss="modal">Add page</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
