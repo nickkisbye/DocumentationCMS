@@ -1,0 +1,173 @@
+body {
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.sidenav {
+    height: 100%;
+    /* Full-height: remove this if you want "auto" height */
+    width: 260px;
+    /* Set the width of the sidebar */
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #1b262c;
+    /* Black */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #bbe1fa;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 260px;
+    /* Same as the width of the sidebar */
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.content-wrapper {
+    width: 99.8%;
+    min-height: 97vh;
+    background-color: white;
+}
+
+.content h2,
+h4 {
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+}
+
+.content .inner-text {
+    font-size: 14px;
+}
+
+hr {
+    background: #bbe1fa;
+    border: 1px solid #bbe1fa;
+}
+
+.blue {
+    color: #0f4c75;
+
+}
+
+.headline-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+}
+
+.headline-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 80%;
+    line-height: 20px;
+}
+.headline-wrapper span {
+    font-size: 14px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.inner-text {
+    background: #f8f8f8;
+    width: 100%;
+    margin-top: 40px;
+    min-height: 130px;
+    border: 1px solid #ececec;
+}
+
+#page-title {
+    padding: 20px;
+    width: 100%;
+}
+
+.inner-text h2 {
+    color: #3282b8;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+.table-of-content {
+    margin: 15px auto;
+    width: 30%;
+    line-height: 40px;
+}
+
+.site-content {
+    margin: auto;
+    width: 80%;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.links {
+    color: #3282b8;
+}
+
+#headline-text {
+    margin: auto;
+    margin-right: 30px;
+}
+
+#site-headline input {
+    padding: 15px;
+    border: 1px solid #ececec;
+    width: 300px;
+}
+
+#content-text {
+    margin: auto;
+    width: 100%;
+    line-height: 20px;
+}
+
+#edit-button, #publish-button {
+    padding: 10px;
+    border: none;
+    background: #0f4c75;
+    color: white;
+    width: 100px;
+}
+
+#delete-button {
+    padding: 10px;
+    border: none;
+    background: #c00;
+    color: white;
+    width: 100px;
+    margin-left: 5px;
+}
